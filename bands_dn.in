@@ -1,0 +1,7 @@
+ &BANDS
+    prefix      = 'work',     ! name of calculation
+    outdir      = './',
+    filband     = 'bands_dn.dat',
+    spin_component = 2,       ! 1 for up, 2 for down
+    lsym        = .true.,
+ /

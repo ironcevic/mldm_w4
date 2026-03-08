@@ -1,0 +1,11 @@
+&INPUT
+  asr = 'simple'
+  flfrc = 'Fe.fc'
+  flfrq = 'Fe.freq'
+  fldos = 'Fe.dos'
+  dos = .true.
+  degauss = 8.0
+  nk1 = 36
+  nk2 = 36
+  nk3 = 36
+/

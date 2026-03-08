@@ -1,0 +1,7 @@
+&DOS
+    prefix      = 'elec',
+    outdir      = './',
+    Emin        = 10.0,
+    Emax        = 30.0,
+    DeltaE      = 0.02,
+ /

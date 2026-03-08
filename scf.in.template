@@ -1,0 +1,38 @@
+ &CONTROL
+   calculation = 'scf',         ! type of calculation
+   outdir      = './'
+   prefix      = 'work',        ! name of calculation
+   pseudo_dir   = './',        ! directory of pseudopotentials
+ /
+
+ &SYSTEM
+   ibrav       = 0,            ! manually defined lattice
+   nat         = 2,            ! # of atoms in the unit cell
+   ntyp        = 1,            ! # of types of atoms in the unit cell
+   nspin       = 2,            ! spin-polarized calculation
+   starting_magnetization(1) = 2.5, ! initial magnetization for Fe
+   ecutwfc     = 20,      ! kinetic energy cutoff for psi
+   ecutrho     = 200,      ! kinetic energy cutoff for rho
+   occupations = 'smearing',   ! smear out populations
+   smearing    = 'cold',       ! smearing type
+   degauss     = 0.02,         ! smearing width
+ /
+
+ &ELECTRONS
+   conv_thr = 1.0d-8          ! convergence threshold
+ /
+
+ATOMIC_SPECIES
+Fe   55.847 Fe.upf
+
+ATOMIC_POSITIONS crystal
+Fe     0.000000000         0.000000000         0.000000000 0 0 0
+Fe     0.500000000         0.500000000         0.500000000 0 0 0
+
+CELL_PARAMETERS angstrom
+        lat_par         0.0000000000         0.0000000000
+        0.0000000000         lat_par         0.0000000000
+        0.0000000000    0.0000000000         lat_par
+
+K_POINTS automatic
+8 8 8 0 0 0 

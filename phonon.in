@@ -1,0 +1,8 @@
+&inputph
+   tr2_ph = 1.0d-12,        ! convergence threshold for phonon calculation
+   prefix = 'work',
+   outdir = './',
+   fildyn = 'Fe.dyn',
+   ldisp = .true.,
+   nq1 = 2, nq2 = 2, nq3 = 2,    ! q-point grid
+/

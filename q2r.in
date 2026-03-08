@@ -1,0 +1,6 @@
+&INPUT
+  fildyn='Fe.dyn'
+  zasr='simple'
+  flfrc='Fe.fc'
+/
+
